@@ -1,0 +1,55 @@
+//
+//  玄机文化-Prefix.pch
+//  玄机文化
+//
+//  Created by 广东省深圳市 on 16/3/15.
+//  Copyright © 2017年 LXJR. All rights reserved.
+//
+#pragma clang diagnostic ignored "-Wimplicit-retain-self"
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import <objc/runtime.h>
+#import <objc/message.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
+
+#import "SaveShareObject.h"
+#import "AppDelegate.h"
+#import "BaseViewController.h"
+#import "UIClassCss.h"
+#import "UIScrollView+PullLoad.h"
+#import "ConvertValue.h"
+#import "TalkCoreObject.h"
+
+#define CALLBACKREADDATA @"callBackReadDataNotice"
+#define CALLBACKWRITEDATA @"callBackWriteDataNotice"
+
+//获取屏幕高度
+#define kScreenHight [UIScreen mainScreen].bounds.size.height
+//获取屏幕宽度
+#define kScreenwidth [UIScreen mainScreen].bounds.size.width
+//底部菜单栏的高度
+#define HEIGHDOCK (CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size)? 83 : 50) //底部dock高度
+//控件高度
+#define HEIGHLINE 50
+//导航栏高度
+#define kNavigationBarH (CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size)? 88 : 64)
+
+#define BORDERLINE 10
+
+#define UNITEHEIGHT 20
+
+#define CELLHEIGHT 33
+
+#define CELLMOSTHEIGHT 44
+
+#define CELL_INDEX 64
+
+#define MAIN_BLACK_COLOR [UIColor colorWithRed:188.0/255 green:0.0/255 blue:0.0/255 alpha:1]
+#define ALLVIEW_BACK_COLOR [UIColor colorWithRed:246.0/255.0 green:246.0/255.0 blue:246.0/255.0 alpha:1]
+#define MAIN_GOLD_COLOR [UIColor colorWithRed:252.0/255 green:223.0/255 blue:38.0/255 alpha:1]
+#define MAIN_WOOD_COLOR [UIColor colorWithRed:20.0/255 green:145.0/255 blue:65/255 alpha:1]
+#define MAIN_WATER_COLOR [UIColor colorWithRed:95.0/255 green:178.0/255 blue:255.0/255 alpha:1]
+#define MAIN_FIRE_COLOR [UIColor colorWithRed:251.0/255 green:104.0/255 blue:40.0/255 alpha:1]
+#define MAIN_EARTH_COLOR [UIColor colorWithRed:183.0/255 green:154.0/255 blue:108.0/255 alpha:1]
